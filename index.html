@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Tags for SEO -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wolokoso Saving Group - A trusted community saving platform in Butaleja-Doho. Save money securely with flexible payment methods. Join our growing savings community today!">
+<meta name="keywords" content="saving group, community savings, SACCO, Butaleja, Doho, Uganda, savings plan, money management">
+<meta name="author" content="Wolokoso Saving Group">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+
+<!-- Open Graph Meta Tags (for social sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wolokoso Saving Group - Build Tomorrow, Save Today">
+<meta property="og:description" content="Join Wolokoso Saving Group and start building your financial future with a trusted community savings platform.">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wolokoso Saving Group">
+<meta name="twitter:description" content="Secure community savings platform in Butaleja-Doho, Uganda">
+<meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://yourwebsite.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="style.css">
+<title>Wolokoso Saving Group | Secure Community Savings Platform</title>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+emailjs.init("WZkh6TOGm7QQDLgSa");
+})();
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VEFBN2CM65"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VEFBN2CM65');
+</script>
+
+<!-- Schema.org Structured Data -->
+  <script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wolokoso Saving Group",
+  "description": "Community saving and investment group in Butaleja-Doho, Uganda",
+  "url": "https://yourwebsite.com",
+  "logo": "https://yourwebsite.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/wolokoso",
+    "https://www.instagram.com/wolokoso",
+    "https://wa.me/256788038536"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Butaleja-Doho",
+    "addressCountry": "UG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+256788038536",
+    "email": "wolokososavinggroup@gmail.com"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+<!-- HEADER -->
+<div class="header">
+<h1>💰 Wolokoso Saving Group</h1>
+<p class="subtitle">Building Tomorrow, Saving Today</p>
+<p class="header-description">Join Uganda's most trusted community savings platform</p>
+</div>
+
+<!-- INFO BOX -->
+<div class="info-box">
+<p><strong>📍 Location:</strong> Butaleja-Doho, Uganda<br>
+<strong>📧 Email:</strong> <a href="mailto:wolokososavinggroup@gmail.com">wolokososavinggroup@gmail.com</a><br>
+<strong>📱 WhatsApp:</strong> <a href="https://wa.me/256788038536" target="_blank">+256 788 038 536</a></p>
+</div>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div class="announcement-banner" id="announcement">
+<span id="announcementText">📢 Welcome to Wolokoso Saving Group - Secure your financial future today!</span>
+<button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
+</div>
+
+<!-- TABS NAVIGATION -->
+<div class="tabs" role="tablist">
+<button class="tab-btn active" data-tab="form" role="tab" aria-selected="true" aria-controls="form">💰 Save Money</button>
+<button class="tab-btn" data-tab="stats" role="tab" aria-selected="false" aria-controls="stats">📊 My Savings</button>
+<button class="tab-btn" data-tab="members" role="tab" aria-selected="false" aria-controls="members">👥 Members</button>
+<button class="tab-btn" data-tab="about" role="tab" aria-selected="false" aria-controls="about">ℹ️ About Us</button>
+<button class="tab-btn" data-tab="help" role="tab" aria-selected="false" aria-controls="help">❓ Help</button>
+</div>
+
+<!-- SAVE MONEY TAB -->
+<div id="form" class="tab-content active" role="tabpanel">
+<h2>Make a Savings Deposit</h2>
+<form id="savingForm">
+
+<label for="date">Date:</label>
+<input type="date" id="date" name="date" required aria-label="Savings date">
+
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required aria-label="Full name">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Your email address" required aria-label="Email address">
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="Phone number (256...)" required aria-label="Phone number">
+
+<label for="amount">Saving Amount:</label>
+<div class="amount-input">
+<input type="number" id="amount" name="amount" placeholder="5000 - 1000000" min="5000" max="1000000" required aria-label="Saving amount">
+<span class="currency">UGX</span>
+</div>
+<small>Minimum: 5,000 | Maximum: 1,000,000</small>
+
+<label for="paymentMethod">Payment Method:</label>
+<select id="paymentMethod" name="paymentMethod" required aria-label="Payment method">
+<option value="">Select payment method</option>
+<option value="Mobile Money">Mobile Money (MTN/Airtel)</option>
+<option value="Bank Transfer">Bank Transfer</option>
+<option value="Cash">Cash Payment</option>
+<option value="Online Transfer">Online Transfer</option>
+</select>
+
+<label for="photo">Photo Receipt:</label>
+<div class="photo-upload" role="button" tabindex="0">
+<input type="file" id="photo" name="photo" accept="image/*" required aria-label="Upload payment receipt">
+<span class="upload-hint">📸 Upload payment receipt or proof</span>
+</div>
+<img id="preview" style="display:none;" alt="Receipt preview">
+
+<label class="checkbox">
+<input type="checkbox" name="terms" required>
+<span>I agree to the Wolokoso Saving Group terms & conditions</span>
+</label>
+
+<div class="form-actions">
+<button type="submit" class="btn-save">💾 Save Money</button>
+<button type="reset" class="btn-reset">🔄 Clear Form</button>
+</div>
+
+</form>
+</div>
+
+<!-- MY SAVINGS TAB -->
+<div id="stats" class="tab-content" role="tabpanel">
+<h2>Your Savings Dashboard</h2>
+<div class="stats-container">
+<div class="stat-card">
+<h3>Total Saved</h3>
+<p class="stat-value" id="totalSaved">0 UGX</p>
+</div>
+<div class="stat-card">
+<h3>Total Transactions</h3>
+<p class="stat-value" id="totalTransactions">0</p>
+</div>
+<div class="stat-card">
+<h3>Last Saved</h3>
+<p class="stat-value" id="lastSaved">N/A</p>
+</div>
+<div class="stat-card">
+<h3>Average Saving</h3>
+<p class="stat-value" id="averageSaved">0 UGX</p>
+</div>
+</div>
+
+<h3>Recent Transactions</h3>
+<div id="transactionsList" class="transactions-list">
+<p class="empty-message">No transactions yet. Start saving!</p>
+</div>
+
+<!-- EXPORT BUTTON -->
+<button class="btn-export" onclick="exportTransactions()">📥 Export as CSV</button>
+</div>
+
+<!-- MEMBERS TAB -->
+<div id="members" class="tab-content" role="tabpanel">
+<h2>Group Members Directory</h2>
+<div id="membersList" class="members-list">
+<p class="empty-message">Loading members...</p>
+</div>
+<p class="members-info">Total Members: <strong id="totalMembers">0</strong></p>
+</div>
+
+<!-- ABOUT US TAB -->
+<div id="about" class="tab-content" role="tabpanel">
+<h2>About Wolokoso Saving Group</h2>
+
+<div class="about-content">
+<h3>🎯 Our Mission</h3>
+<p>To empower community members by providing a secure, transparent, and inclusive platform for savings and financial growth.</p>
+
+<h3>💼 What We Do</h3>
+<ul>
+<li>Provide flexible savings plans for all income levels</li>
+<li>Offer competitive interest rates for members</li>
+<li>Organize financial literacy workshops</li>
+<li>Support emergency loans for qualified members</li>
+<li>Build a strong community of savers</li>
+</ul>
+
+<h3>✨ Why Choose Us?</h3>
+<ul>
+<li><strong>✅ Secure:</strong> Your money is safe with us</li>
+<li><strong>✅ Transparent:</strong> Clear terms and conditions</li>
+<li><strong>✅ Community-Driven:</strong> Decisions made by members</li>
+<li><strong>✅ Easy Access:</strong> Multiple payment methods</li>
+<li><strong>✅ Growth:</strong> Earn interest on your savings</li>
+</ul>
+
+<h3>📈 By The Numbers</h3>
+<p>Wolokoso Saving Group has helped over <strong id="membersCount">50+</strong> community members save <strong id="totalSavingsCount">millions</strong> of UGX.</p>
+</div>
+</div>
+
+<!-- HELP CENTER TAB -->
+<div id="help" class="tab-content" role="tabpanel">
+<h2>Help & Support</h2>
+
+<div class="help-box">
+<h3>👨‍💼 Chairperson</h3>
+<p>For general inquiries and group matters</p>
+<div class="contact-links">
+<a href="tel:0788038536" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256788038536" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0788038536" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<div class="help-box">
+<h3>📋 Secretary</h3>
+<p>For documentation and record inquiries</p>
+<div class="contact-links">
+<a href="tel:0757640767" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256757640767" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0757640767" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<div class="help-box">
+<h3>💵 Treasurer</h3>
+<p>For financial and payment inquiries</p>
+<div class="contact-links">
+<a href="tel:0765042710" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256765042710" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0758294286" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq-box">
+<h3>❓ Frequently Asked Questions</h3>
+
+<details>
+<summary>What is the minimum saving amount?</summary>
+<p>The minimum saving amount is 5,000 UGX. You can save up to 1,000,000 UGX per transaction.</p>
+</details>
+
+<details>
+<summary>How long does it take to confirm my savings?</summary>
+<p>Your savings are confirmed within 24 hours after submission and verification by our treasurer.</p>
+</details>
+
+<details>
+<summary>What payment methods do you accept?</summary>
+<p>We accept Mobile Money (MTN/Airtel), Bank Transfers, Cash payments, and Online Transfers.</p>
+</details>
+
+<details>
+<summary>Can I withdraw my savings anytime?</summary>
+<p>Yes, you can withdraw your savings after completing 3 months of membership. Some conditions may apply.</p>
+</details>
+
+<details>
+<summary>Do you offer loans to members?</summary>
+<p>Yes! Members can access emergency loans at competitive rates. Contact the treasurer for more details.</p>
+</details>
+
+<details>
+<summary>How is interest calculated?</summary>
+<p>Interest is calculated quarterly on your total savings balance. Current rate: 5% per annum.</p>
+</details>
+
+<details>
+<summary>How can I join the group?</summary>
+<p>Contact any group official. You need to register, pay a one-time registration fee of 10,000 UGX, and make your first savings deposit.</p>
+</details>
+</div>
+
+<!-- SITEMAP NOTICE -->
+<div class="info-box" style="margin-top: 20px; background: #fff3cd; border-left-color: #ffc107;">
+<p><strong>📋 Site Information:</strong> <a href="sitemap.xml" target="_blank">View Sitemap</a> | <a href="robots.txt" target="_blank">View Robots.txt</a> | <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+</div>
+</div>
+
+<!-- MODAL FOR PHOTO PREVIEW -->
+<div id="photoModal" class="modal">
+<div class="modal-content">
+<span class="close-modal" role="button" tabindex="0">&times;</span>
+<h3>Received Photo</h3>
+<img id="modalPhoto" src="" alt="Received payment receipt photo">
+<p id="modalInfo"></p>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#form">Save Money</a></li>
+<li><a href="#stats">My Savings</a></li>
+<li><a href="#help">Help Center</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<ul>
+<li>📍 Butaleja-Doho, Uganda</li>
+<li>📧 <a href="mailto:wolokososavinggroup26@gmail.com">Email Us</a></li>
+<li>💬 <a href="https://wa.me/256788038536" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Legal</h4>
+<ul>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms & Conditions</a></li>
+</ul>
+</div>
+</div>
+<p class="copyright">© 2026 Wolokoso Saving Group. All rights reserved. <br>Building wealth together, one transaction at a time.</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<style>
+/* ============================================
+   WOLOKOSO SAVING GROUP - ENHANCED CSS
+   SEO & Accessibility Optimized
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.header-description {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ============================================
+   INFO BOX
+   ============================================ */
+.info-box {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+  font-size: 14px;
+  color: #333;
+}
+
+.info-box a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* ============================================
+   ANNOUNCEMENT BANNER
+   ============================================ */
+.announcement-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+.close-announcement {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.close-announcement:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* ============================================
+   TABS
+   ============================================ */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  overflow-x: auto;
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  bottom: -2px;
+  white-space: nowrap;
+}
+
+.tab-btn:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.tab-btn.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.tab-btn:hover {
+  color: #667eea;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+}
+
+.amount-input {
+  position: relative;
+}
+
+.amount-input input {
+  padding-right: 50px;
+}
+
+.currency {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-weight: 600;
+}
+
+small {
+  color: #999;
+  font-size: 12px;
+  margin-top: -8px;
+  display: block;
+}
+
+.photo-upload {
+  position: relative;
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.photo-upload:hover,
+.photo-upload:focus {
+  background: #f0f4ff;
+  border-color: #764ba2;
+}
+
+.photo-upload input[type="file"] {
+  display: none;
+}
+
+.upload-hint {
+  color: #667eea;
+  font-weight: 500;
+  display: block;
+}
+
+#preview {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.checkbox span {
+  color: #333;
+}
+
+/* ============================================
+   FORM ACTIONS
+   ============================================ */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-save,
+.btn-reset,
+.btn-export {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save:active {
+  transform: translateY(0);
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  background: #f0f0f0;
+  color: #333;
+  flex: 1;
+}
+
+.btn-reset:hover {
+  background: #e0e0e0;
+}
+
+.btn-export {
+  background: #25d366;
+  color: white;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn-export:hover {
+  background: #1fa853;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   STATS
+   ============================================ */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 
